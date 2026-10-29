@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking and orders</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+           /* Header*/
+        header {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin-top: 0;
+        }
+           /* NAVIGATION BAR*/
+        nav{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20PX;
+            text-align: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+        }
+        /* MAIN CONTAINER*/
+         .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+         }
+        /*TWO SECTIONS */
+        .sections {
+            display: flex;
+            gap: 30px;
+        }
+        .section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            flex: 1;
+            box-shadow: 0 3px 10px rgba 0, 0, 0, 0.1;
+        }
+        .section h2 {
+            color: orange;
+            text-align: center;
+        }
+        /* FORM*/
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button :hover {
+            background-color: darkorange;
+        }
+        /* FOOTER*/
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* MOBILE VIEW*/
+        @media (max-width: 700px) {
+            .section{
+                flex-direction: column;
+            }
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <h1> Aunt Tina Restaurant</h1>
+        <p>Book a Table or Order your Favorite Meal for Delivery</p>
+    </header>
+    <!--NAVIGATION-->
+    <nav>
+        <a href="index.html">Home</a>
+         <a href="about_us.html">About_Us</a>
+          <a href="menu.html">Menu </a>
+           <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Booking</a>
+             <a href="contact_us.html">Contact_Us</a>
+    </nav>
+    <!--MAIN CONTENT-->
+    <div class="container">
+        <h1 style="text-align: center;">Booking And Delivery</h1>
+        <div class="sections">
+            <!-- SECTION 1: TABLE BOOKING-->
+             <div class="section">
+                <h2> Table Booking</h2>
+                <p>
+                    Reserve a table at Aunt Tina Restaurant<br>
+                    and enjoy a wonderful dining experience. 
+                </p>
+                <form>
+                    <label for="name"> Full Name</label>
+                    <input type="name " id=" name" name=" name" placeholder="Enter yuor Full name" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder=" enter your phone number" required>
+
+                    <label for="guests">Number ogf Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20"
+                     placeholder=" Enter the number of Guests" required>
+                     
+                    <label for=" date">Booking Date</label>
+                    <input type="date" id=" date" name="date" required>
+
+                    <label time> Booking Time</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="request">Special Request</label>
+                    <textarea id="request" name="request" placeholder=" Any special requests?"></textarea>
+
+                    <button type="submit">Book a Table</button>
+                </form>
+             </div>
+            
+            <!-- SECTION 2: DELIVERY-->
+            <div class="section">
+                <H2> Delivery Details </H2>
+                <p>
+                    Order your favorite meals and have them<br>
+                    delivered to your prefferred location.
+                </p>
+
+                <form>
+                    <label for="delivery name"> Full Name</label>
+                    <input type="text" id="delivery name" name="delivery name" placeholder="Enter your full name" required>
+
+                    <label for=" delivery phone">Phone Number</label>
+                    <input type="tel" id="delivery phone" name="delivery phone" placeholder="Enter your phone number" required>
+
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" placeholder="Enter your delivery Address" required></textarea>
+
+                    <label for="food">Food / Order</label>
+                    <textarea id="food" name="food" placeholder="Enter the food You want to Order" required></textarea>
+                    
+                    <label for=" delivery time">Preferred Delivery Time</label>
+                    <input type="time" id="delivery time" name="delivery time" required>
+
+                    <label for="instructions">Delivery Instructions</label>
+                    <textarea id="instructions" name="instructions" placeholder="Any instructions for the delivery"></textarea>
+
+                    <button type="submit">Order For Delivery</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <p>
+            &copy; 2026 Aunt Tina Restaurant.<br>
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

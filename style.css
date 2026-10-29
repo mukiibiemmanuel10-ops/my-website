@@ -1,0 +1,79 @@
+/* RESPONSIVE RESTAURANT WEBSITE*/
+/* Make sizing predictable*/
+* {
+    box-sizing: border-box;
+}
+/* Prenent page from becoming wider than screen*/
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    max-width: 100%;
+    margin: 0;
+}
+/* Make images fit thier containers*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Keep content iside the sreen*/
+section,
+header,
+footer
+main {
+    max-width: 100%;
+}
+/* Allow long text and links to wrap*/
+p,
+a,
+h1,
+h2,
+h3 {
+    overflow-wrap: break-word;
+}/* Make forms fit for mobile screens*/
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+input,
+select,
+textarea {
+    width: 100%;
+}
+/* Mobile screen adjustment*/
+@media screen and (max-width:768px)
+ {
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: clamp(25px, 5vw, 36px);
+    }
+    h2 {
+        font-size: clamp (21px 5vw 29px);
+    }
+ }
+/* Stack common card layouts vertically*/
+.services,
+.menu-container,
+.gallery-container,
+.card-container {
+    grid-template-columns: 1fr;
+}
+/* Extra small phones*/
+@media screen and (max-width: 480px)
+{
+    body {
+        font-size: 15px;
+
+    }
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+}

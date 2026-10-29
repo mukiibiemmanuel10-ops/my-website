@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("foood 4 .jpg.webp");
+             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100VH;
+            font-family: Arial, sans-serif;
+        }
+                /* Header*/
+        header {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin-top: 0;
+        }
+           /* NAVIGATION BAR*/
+        nav{
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20PX;
+            text-align: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        /* Menu section*/
+        .menu-container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 35px auto;
+        }
+        .category {
+            margin-bottom: 35px;
+        }
+        .category h2 {
+            color: #8b0000;
+            text-align: center;
+            border-bottom: 2px solid #8b0000;
+        }
+        .menu item {
+            background-color: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0 ,0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu-item h3 {
+            margin: 0 0 8px;
+        }
+        .menu-item p {
+            margin: 0;
+            color: #666;
+        }
+        .price {
+            color: #8b0000;
+            font-weight: bold;
+            font-size: 18px;
+           white-space: nowrap;
+           margin-left: 15px; 
+        }
+        /* Button*/
+        .button {
+            padding: 14px;
+            background-color: blueviolet;
+            color: wheat;
+            border: navajowhite;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 200px;
+        }
+        /* Footer*/
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        /* Mobile display*/
+        @media (max-width: 650px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+            .menu-item {
+                align-items: flex-start;
+            }
+            .price {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aunt Tina Restaurant</h1>
+        <p>Delicius Foods Prepared With Love</p>
+    </header>
+    <nav>
+         <a href="index.html">Home</a>
+         <a href="about_us.html">About_Us</a>
+          <a href="menu.html">Menu </a>
+           <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Booking</a>
+             <a href="contact_us.html">Contact_Us</a>
+    </nav>
+    <div class="menu-container">
+        <section class="category">
+            <h2>Breakfast</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Full Breakfast</h3>
+                    <p>Eggs, sausages, toast, beans and fresh fruit.</p>
+                </div>
+                <span class="price">UGX 12000</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3> Cheese Omultte</h3>
+                    <p>Fresh eggs prepared with cheese and vegetables.</p>
+                </div>
+                <span class="price"> UGX 10000</span>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Main Dishes</h2>
+            <div class="menu-item">
+                <div>
+                    <h3>Grilled Chicken</h3>
+                    <p>Grilled chicken served with vegetables and fries </p>
+                </div>
+                <span class="price">UGX 25000</span>
+
+                <div>
+                    <h3>Chicken Luwombo</h3>
+                    <p> Chicken luwombo served with any traditonal food of your choice</p>
+                </div>
+                <span class="price">UGX 50000</span>
+                <div>
+                    <h3> Chicken Lusaniya</h3>
+                    <p>Chicken well prepared on a lusaniya with a drink</p>
+                </div>
+                <span class="price">UGX 75000</span>
+                <div>
+                    <h3>Chips and Chicken</h3>
+                    <p> A full meal of Chips and chicken served with a drink</p>
+                </div>
+                <span class="price">UGX 25000</span>
+                <div>
+                    <h3>Chicken Stew Dishes</h3>
+                    <p>A full Meal served with chicken Stew and a drik</p>
+                </div>
+                <span class="price">UGX 30000</span>
+                <div>
+                    <h3>Beaf Steak</h3>
+                    <p>Tender beef steak served with potatoes</p>
+                </div>
+                <span class="price">UGX 30000</span>
+                <div>
+                    <h3>Meat Stew Dishes</h3>
+                    <p>A full meal served with a meat stew and a drink </p>
+                </div>
+                <span class="price">UGX 25000</span>
+                <div>
+                    <h3>Fish Dishes</h3>
+                    <p>All dishes served with fish and a drink</p>
+                </div>
+                <span class="price">UGX 35000</span>
+
+                <div>
+                    <h3> Other Local dishes</h3>
+                    <p> local dishes like Katogo, beans, gnuts, peas and served with a drink </p>
+                </div>
+                <span class="price">UGX 15000</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <h3>Creamy pasta</h3>
+                    <p>pasta prepared with delicius creamy sauce</p>
+                </div>
+                <span class="price">UGX 20000</span>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <div>
+                    <h3> Fresh Fruit Juice</h3>
+                    <p>Freshly Prepared natural fruit juice</p>
+                </div>
+                <span class="price">UGX 7000</span>
+                <div>
+                    <h3>Hot coffee</h3>
+                    <p> Freshly brewed hot coffee</p>
+                </div>
+                <span class="price"> UGX 6000</span>
+                <div>
+                    <h3>soft Drinks</h3>
+                    <p> A selection of chilled soft drinks.</p>
+                </div>
+                <span class="price"> UGX 4000</span>
+            </div>
+        </section>
+        <p style="text-align: center;">Make your resevation or order now</p>
+        <a href="booking.html" class="button">Make Order</a>
+    </div>
+
+     
+
+    <footer>
+        <p>
+            &copy; 2026 Aunt Tina Restaurant<br>All Rights Reserved
+        </p>
+    </footer>
+</body>
+</html>
