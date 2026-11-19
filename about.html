@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Discover the story, values, and passion behind Aunt Tina Restaurant." />
+  <title>About Us — Aunt Tina Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav__brand" href="index.html"><span class="nav__brand-dot"></span>Aunt Tina</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link is-active" href="about.html">About</a></li>
+        <li><a class="nav__link" href="menu.html">Menu</a></li>
+        <li><a class="nav__link" href="gallery.html">Gallery</a></li>
+        <li><a class="nav__link" href="booking.html">Booking</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" style="padding-block:var(--s-7) var(--s-5);">
+      <div class="hero__inner reveal">
+        <p class="eyebrow">Our Story</p>
+        <h1>Good food brings people <em>together</em>.</h1>
+        <p class="hero__lead">Discover our values, our mission, and our passion for creating memorable dining experiences.</p>
+      </div>
+    </section>
+
+    <section class="section container" style="padding-top:0;">
+      <div class="bento">
+        <article class="bento__item span-8 reveal">
+          <p class="eyebrow">Who We Are</p>
+          <h3 style="margin:0.5rem 0 1rem;">A welcoming space for every guest</h3>
+          <p>Aunt Tina Restaurant is dedicated to providing delicious meals and excellent customer service. We believe that good food brings people together and creates lasting memories.</p>
+          <p style="margin-top:0.8rem;">We offer a variety of meals and drinks prepared with care. Our goal is to make every customer feel comfortable and enjoy a pleasant dining experience.</p>
+        </article>
+
+        <article class="bento__item bento__item--stat span-4 reveal reveal-delay-1">
+          <h3>100%</h3>
+          <p>Commitment to customer satisfaction.</p>
+        </article>
+
+        <article class="bento__item span-4 reveal reveal-delay-2">
+          <div class="bento__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To become a trusted and preferred restaurant known for quality meals, customer satisfaction, and outstanding service.</p>
+        </article>
+
+        <article class="bento__item span-8 reveal reveal-delay-2">
+          <p class="eyebrow">Why Choose Us</p>
+          <h3 style="margin:0.5rem 0 1rem;">The little things that matter</h3>
+          <ul style="display:grid;gap:0.6rem;color:var(--text-muted);">
+            <li>✓ Quality and delicious meals</li>
+            <li>✓ Friendly and welcoming customer service</li>
+            <li>✓ Clean and comfortable dining environment</li>
+            <li>✓ Affordable prices for our customers</li>
+            <li>✓ Commitment to customer satisfaction</li>
+          </ul>
+        </article>
+
+        <article class="bento__item bento__item--accent span-12 reveal reveal-delay-3">
+          <p class="eyebrow">Our Commitment</p>
+          <h3 style="margin:0.5rem 0 1rem;">Listening, improving, and growing</h3>
+          <p>We are committed to making every visit enjoyable. We value our customers, listen to their feedback, and continually strive to improve our food and service.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section>
+          <h2>Aunt Tina Restaurant</h2>
+          <p>Freshly prepared meals and a welcoming atmosphere. We look forward to seeing you.</p>
+        </section>
+        <section>
+          <h3>Explore</h3>
+          <a href="about.html">About Us</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+        </section>
+        <section>
+          <h3>Get in touch</h3>
+          <a href="contact.html">Contact Us</a>
+          <a href="booking.html" class="footer-cta">Book a Table</a>
+        </section>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span data-year>2026</span> Aunt Tina Restaurant. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

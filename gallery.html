@@ -1,239 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our gallery </title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body{
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-           /* Header*/
-        header {
-            background-color: #8b0000;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header p {
-            margin-top: 0;
-        }
-           /* NAVIGATION BAR*/
-        nav{
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20PX;
-            text-align: center;
-        }
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin: 20px;
-            font-size: 18px;
-        }
-        section {
-            padding: 35px 20px;
-            text-align: center;
-        }
-        h2 {
-            color: #8b0000;
-            font-size: 30px;
-            margin-top: 0;
-        }
-        .description {
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(3 1fr);
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .gallery-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 7px #ccc;
-        }
-        .gallery-card h3,
-        .chef-card h3 {
-            color: #8b0000;
-            margin-bottom: 8px;
-        }
-        .gallery-card p {
-            padding: 0 12px 12px;
-        }
-        .chef-section {
-            background: #fff8ee;
-        }
-        .chefs-cointainer {
-            display: grid;
-            grid-template-columns: repeat(4 1fr);
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .chef-card {
-            background: white;
-            padding: 20px 12px;
-            border-radius: 8px;
-            box-shadow: 0 2px 7px;
-        }
-        .chef-card img {
-            width: 120px;
-            height: 12o0px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .chef-role {
-            font-style: italic;
-            color: #666;
-        }
-        .chef-card p {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        @media (max-width: 800px) {
-            .gallery-container{
-                grid-template-columns: repeat(2 1fr);
-            }
-            .chefs-cointainer {
-                grid-template-columns: repeat(2 1fr);
-            }
-        }
-        @media (max-width: 500px) {
-            .gallery-container,
-            .chefs-cointainer {
-                grid-template-columns: 1fr;
-            }
-            header h1 {
-                font-size: 24px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore the Aunt Tina Restaurant gallery — our food, our space, and our team." />
+  <title>Gallery — Aunt Tina Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Aunt Tina Restaurant</h1>
-        <p>Delicious Food Prepared With Love</p>
-    </header>
-    <nav>
-         <a href="index.html">Home</a>
-         <a href="about_us.html">About_Us</a>
-          <a href="menu.html">Menu </a>
-           <a href="gallery.html">Gallery</a>
-            <a href="booking.html">Booking</a>
-             <a href="contact_us.html">Contact_Us</a>
-    </nav>
-    <section>
-        <h2>Our Gallery</h2>
-        <p class="description"> Explore ou delicius meals, welcoming atmosphere and  the special moments that make Aunt Tina a wounderful place to dine</p>
-        <div class="gallery-container">
-        <div class="gallery-card">
-            <img src="OIP.webp" alt="Restaurant interior">
-            <h3>Our Restaurant</h3>
-            <p>A welcoming place to enjoy your meal</p>
-        </div>
-        <div class="gallery-card">
-            <img src="juice 2.webp" alt="fruit juice">
-            <h3>Delicios Fruit Juice</h3>
-            <p>Enjoy your day with a soft delicious nutritious fruit drink</p>
-        </div>
-        <div class="gallery-card">
-            <img src="chicken.webp" alt="chicken luwombo">
-            <h3>Chicken Luwonbo</h3>
-            <p>Enjoy your day with cultural chicken luwombo</p>
-        </div>
-        <div class="gallery-card">
-            <img src="foood 4 .jpg.webp" alt=" fried foods">
-            <h3>Fried Food</h3>
-            <p>Enjoy a variety of fried delicious foods here</p>
-        </div>
-        <div class=" gallery-card">
-            <img src="lusaniya 1.webp " alt="lusaniya">
-            <h3>Lusaniya</h3>
-            <p>Make an Order and enjoy your chicken lusaniya any where you are.</p>
-        </div>
 
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav__brand" href="index.html"><span class="nav__brand-dot"></span>Aunt Tina</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="menu.html">Menu</a></li>
+        <li><a class="nav__link is-active" href="gallery.html">Gallery</a></li>
+        <li><a class="nav__link" href="booking.html">Booking</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </header>
+
+  <main>
+    <section class="hero container" style="padding-block:var(--s-7) var(--s-5);">
+      <div class="hero__inner reveal">
+        <p class="eyebrow">Visual Stories</p>
+        <h1>Moments from our <em>kitchen</em>.</h1>
+        <p class="hero__lead">Explore our delicious meals, welcoming atmosphere, and the special moments that make Aunt Tina wonderful.</p>
+      </div>
     </section>
-    <section class="chef-section">
-        <h2> Meet Our Chefs</h2>
-        <p class="description">
-            Our telented chefs bring passion, creativity and experience to every dish. <br>
-            They work hard to give you the best dining experience.
-        </p>
-        <div class="chefs-cointainer">
-            <div class="chef-card">
-                <img src="hd chef.jpg" alt="hd chef"> 
-                <h3>Chef James Mwangi</h3>
-                <div class="chef-role">
-                    Head Chef
-                </div>
-                <p>
-                    He leads our chicken with skills, experince and passion for cooking
-                </p>
-            </div>
 
-            <div class="chef-card">
-                <img src="ass hd chef5.webp" alt="chef Nakazzi Anita">
-                <h3>Chef Nakazzi Anita</h3>
-                <div class="chef-role">  Assistant Head Chef</div>
-                <p>
-                    She works together with the head cheaf to make peoples dreams true
-                </p>
-            </div>
-            <div class="chef-card">
-                <img src="chef 1.jpg" alt="chef Aisha Namulomdo">
-                <h3> Chef Namulomdo Aisha</h3>
-                <div class="chef-role"> Vegatable Chef</div>
-                <p>
-                    She is resiponble for all delicious vegetables served at our restaurant.
-                </p>
-            </div>
-            <div class="chef-card">
-                <img src="juice d chef.jpg" alt="chef justine mpuuga">
-                <h3>Chef Justine Mpuuga</h3>
-                <div class="chef-role"> Juice Chef</div>
-                <p>
-                    She is the one in charge of production of fruit juice
-                </p>
+    <section class="section container" style="padding-top:0;">
+      <div class="bento">
+        <article class="bento__item bento__item--media span-8 row-2 reveal">
+          <img src="OIP.webp" alt="Restaurant interior" />
+          <div class="bento__overlay"><h3>Our Restaurant</h3><p>A welcoming place to enjoy your meal.</p></div>
+        </article>
 
-            </div>
-            <div class="chef-card">
-                <img src="chef 4.webp" alt="chef annet nabugo">
-                <h3>Chef Annet Nabugo</h3>
-                <div class="chef-role"> Meat Chef</div>
-                <p>
-                    She is resposinble in the production of all meat dishes
-                </p>
-            </div>
+        <article class="bento__item bento__item--media span-4 reveal reveal-delay-1">
+          <img src="juice.webp" alt="Fresh fruit juice" />
+          <div class="bento__overlay"><h3>Fresh Juice</h3><p>Soft, delicious, and nutritious.</p></div>
+        </article>
 
-        </div>
+        <article class="bento__item bento__item--media span-4 reveal reveal-delay-2">
+          <img src="chicken.webp" alt="Chicken luwombo" />
+          <div class="bento__overlay"><h3>Chicken Luwombo</h3><p>Traditional and unforgettable.</p></div>
+        </article>
+
+        <article class="bento__item bento__item--media span-6 reveal">
+          <img src="foood%204%20.jpg.webp" alt="Fried foods" />
+          <div class="bento__overlay"><h3>Fried Foods</h3><p>A variety of crispy favourites.</p></div>
+        </article>
+
+        <article class="bento__item bento__item--media span-6 reveal reveal-delay-1">
+          <img src="lusaniya%201.webp" alt="Lusaniya" />
+          <div class="bento__overlay"><h3>Lusaniya</h3><p>Order and enjoy anywhere.</p></div>
+        </article>
+      </div>
     </section>
-    <footer>
-        <p>
-            &copy; 2026 Aunt Tina Restaurant<br>
-            All Rights Resevered
-        </p>
-        <p>Good food | Greatpeople | Happy moments</p>
-    </footer>
+
+    <section class="section container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Our Team</p>
+        <h2>Meet our chefs</h2>
+        <p>Talented chefs bringing passion, creativity, and experience to every dish.</p>
+      </div>
+
+      <div class="chefs-grid">
+        <article class="chef-card reveal">
+          <img class="chef-card__photo" src="hd%20chef.jpg" alt="Chef James Mwangi" />
+          <h3>Chef James Mwangi</h3>
+          <p class="chef-card__role">Head Chef</p>
+          <p>Leads our kitchen with skill, experience, and passion for cooking.</p>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-1">
+          <img class="chef-card__photo" src="ass%20hd%20chef5.webp" alt="Chef Nakazzi Anita" />
+          <h3>Chef Nakazzi Anita</h3>
+          <p class="chef-card__role">Assistant Head Chef</p>
+          <p>Works together with the head chef to make every dish a reality.</p>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-2">
+          <img class="chef-card__photo" src="chef%201.jpg" alt="Chef Aisha Namulomdo" />
+          <h3>Chef Namulomdo Aisha</h3>
+          <p class="chef-card__role">Vegetable Chef</p>
+          <p>Responsible for all the delicious vegetables served at our restaurant.</p>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-2">
+          <img class="chef-card__photo" src="juice%20d%20chef.jpg" alt="Chef Justine Mpuuga" />
+          <h3>Chef Justine Mpuuga</h3>
+          <p class="chef-card__role">Juice Chef</p>
+          <p>In charge of the production of our fresh fruit juices.</p>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-3">
+          <img class="chef-card__photo" src="chef%204.webp" alt="Chef Annet Nabugo" />
+          <h3>Chef Annet Nabugo</h3>
+          <p class="chef-card__role">Meat Chef</p>
+          <p>Responsible for the production of all meat dishes.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section><h2>Aunt Tina Restaurant</h2><p>Freshly prepared meals and a welcoming atmosphere.</p></section>
+        <section><h3>Explore</h3><a href="about.html">About Us</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></section>
+        <section><h3>Get in touch</h3><a href="contact.html">Contact Us</a><a href="booking.html" class="footer-cta">Book a Table</a></section>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span data-year>2026</span> Aunt Tina Restaurant. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
